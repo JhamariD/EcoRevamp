@@ -1,0 +1,4 @@
+Guido - Has list funcionailty, only accessible on Processing 3 though.
+G4P - 2012-2013 funcitonality, probably not compataible with Processing 4. Did not test out.
+Interfascia - Has basic functions, it's alright but only possible usuable function would be the text_field example.
+ControlP5 - Got it to show up on the app, but needs alot of configuration before it's fully intergrated in our code.
