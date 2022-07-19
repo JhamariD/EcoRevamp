@@ -46,7 +46,8 @@ class Logo{
   Logo(){
      applogo = loadImage("applogo.png");
   startscreenbg = loadImage("startscreenbg.jpg");
-  button = new Button(width/2-400, height/3, 800, 200, "Search Alternative",255,255,255, 50);
+  //button = new Button(width/2-400, height/3, 800, 200, "Search Alternative",255,255,255, 50);
+  //button1 = new Button(width/2-400, height/2, 800, 200, "Add New Component",255,255,255, 50);
   }
   
   
