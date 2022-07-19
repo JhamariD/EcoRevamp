@@ -17,10 +17,6 @@ void setup() {
 
 }
 void draw() {
-  //image(startscreenbg, width/2, height/2, width, height);
-  //tint(255, 255);
-  //imageMode(CENTER);
-  //image(applogo, width/2, height/5);
  logo.render();
   button.update();
   button.render();
