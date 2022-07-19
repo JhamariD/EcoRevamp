@@ -21,18 +21,26 @@ class Button{
   {
     if(mousePressed && mouseX>= Pos.x && mouseX <=Pos.x+Width && mouseY >=Pos.y+Height && mouseY <= Pos.y+Height){
       Clicked = true;
+      print("clicked");
+    }
+    else{
+      Clicked = false;
+   
     }
   }
   
   void render() //must be placed in void draw to render image
   {
-    fill(255,255,255);
+    fill(255,255,255,35);
+     tint(255, 128);
     rect(Pos.x,Pos.y,Width,Height);
-    
-    fill(0);
+    noStroke();
+    fill(255,255,255);
+    tint(255,255);
     textAlign(CENTER,CENTER);
     textSize(TextS);
     text(Text,Pos.x+(Width/2),Pos.y+(Height/2));
+    
     
   }
   boolean isClicked(){
@@ -45,16 +53,16 @@ class Logo{ //defines logo
   
   Logo(){
      applogo = loadImage("applogo.png");
-  startscreenbg = loadImage("startscreenbg.jpg");
+  startscreenbg = loadImage("background2.png");
   }
   
   
   
-  void render(){
+  void renderbg(){
   image(startscreenbg, width/2, height/2, width, height);
   tint(255, 255);
   imageMode(CENTER);
-  image(applogo, width/2, height/8,600,440);
+  image(applogo, width/2, height/3,1200,880);
 
   }
 }
