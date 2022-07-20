@@ -1,3 +1,7 @@
+import controlP5.*;
+import java.util.*;
+
+
 class Button {
   PImage button;
   PVector Pos = new PVector (0, 0);
@@ -24,9 +28,6 @@ class Button {
       if (mouseX>= Pos.x && mouseX <=Pos.x+Width && mouseY>=Pos.y && mouseY <= Pos.y+Height) {
         Clicked = true;
         print("clicked");
-      } else {
-        Clicked = false;
-        print("not clicked");
       }
     }
   }
@@ -70,8 +71,30 @@ class Logo { //defines logo
     tint(255, 255);
     imageMode(CENTER);
   }
-  
-  void renderlogo(){
-     image(applogo, width/2, height/3, 1200, 880);
+
+  void renderlogo() {
+    image(applogo, width/2, height/3, 1200, 880);
+  }
+  void renderlogo2() {
+    image(applogo, width/1.2, height/11, 300, 220);
   }
 }
+
+//class ScrollableList {
+//  ControlP5 cp5;
+//  ScrollableList(PApplet thePApplet) {
+//    cp5 = new ControlP5(thePApplet);
+
+//    List l = Arrays.asList("Basketball", "Football", "Soccer", "Baseball", "Tennis", "a", "a", "a", "a", "a");
+//    cp5.addScrollableList("dropdown")
+//      .setPosition(100, 100)
+//      .setSize(1000, 500)
+//      .setBarHeight(100)
+//      .setItemHeight(90)
+//      .addItems(l)
+//      .setFont(font)
+//      .close()
+//      // .setType(ScrollableList.LIST) // currently supported DROPDOWN and LIST
+//      ;
+//  }
+//}

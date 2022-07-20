@@ -1,3 +1,7 @@
+
+float x, y;
+String text;
+PFont font = createFont("arial", 30);
 //PImage applogo, startscreenbg;
 Button searchalt, addnew, getstarted, back;
 Logo logo;
@@ -6,6 +10,10 @@ int scene;
 //KetaiCamera cam;
 
 void setup() {
+ 
+
+  
+  
   //applogo = loadImage("applogo.png");
   //startscreenbg = loadImage("startscreenbg.jpg");
   fullScreen();
@@ -29,6 +37,7 @@ void draw() {
     searchalt.render();
     addnew.render();
     back.render();
+    logo.renderlogo2();
     break;
 
   default:
