@@ -1,0 +1,11 @@
+[
+  {
+    "entry_name": "NRF5240",
+  },
+  {
+    "entry_name": "ATMEGA328",
+  },
+  {
+    "entry_name": "ATTINY85",
+  }
+]
